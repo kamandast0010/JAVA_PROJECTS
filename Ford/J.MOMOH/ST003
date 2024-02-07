@@ -1,0 +1,148 @@
+        QUESTION 1
+----The switch statement is a control flow statement that allows a program to execute
+different code blocks based on the value of an expression.
+
+---It provides a more concise way to write multiple
+if-else statements when you want to compare a
+single value against multiple possible values.
+
+QUESTION 1 EXAMPLE WITH CODE
+public class SwitchExample {
+    public static void main(String[] args) {
+        int dayOfWeek = 3;
+
+        switch (dayOfWeek) {
+            case 1:
+                System.out.println("It's Monday");
+                break;
+            case 2:
+                System.out.println("It's Tuesday");
+                break;
+            case 3:
+                System.out.println("It's Wednesday");
+                break;
+            case 4:
+                System.out.println("It's Thursday");
+                break;
+            case 5:
+                System.out.println("It's Friday");
+                break;
+            case 6:
+                System.out.println("It's Saturday");
+                break;
+            case 7:
+                System.out.println("It's Sunday");
+                break;
+            default:
+                System.out.println("Invalid day of the week, you wanna fail this test?");
+        }
+    }
+}
+
+
+QUESTION 5
+
+class Animal {
+
+    void sound() {
+        System.out.println("Some generic animal sound");
+    }
+}
+//subclass1
+
+class Bird extends Animal {
+
+    @Override
+    void sound() {
+        System.out.println("Tweet, tweet!");
+    }
+}
+
+// my Subclass 2
+class Cat extends Animal {
+
+    @Override
+    void sound() {
+        System.out.println("Meow, meow!");
+    }
+}
+
+
+public class AnimalTest {
+    public static void main(String[] args) {
+
+        Animal genericAnimal = new Animal();
+        System.out.println("Generic Animal sound:");
+        genericAnimal.sound();
+        System.out.println();
+
+
+        Bird myBird = new Bird();
+        System.out.println("Bird sound:");
+        myBird.sound();
+        System.out.println();
+
+
+        Cat myCat = new Cat();
+        System.out.println("Cat sound:");
+        myCat.sound();
+    }
+}
+
+QUESTION 3
+In Java, the for loop is a control flow statement
+that allows you to repeatedly execute a block of code a specified number of times.
+It is commonly used when you know in advance how many times you want to execute a block of code.
+
+This is the basic syntax/ example to for a "for" loop
+
+}
+public class ForLoopExample {
+    public static void main(String[] args) {
+        // Using a for loop to print numbers from 1 to 5
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Number: " + i);
+        }
+    }
+}
+
+
+QUESTION 4
+
+class Animal {
+
+    void makeSound() {
+        System.out.println("Some generic animal sound");
+    }
+}
+
+// My Subclass1
+class Cat extends Animal {
+
+    @Override
+    void makeSound() {
+        System.out.println("Meow, meow!");
+    }
+}
+
+
+public class AnimalTest {
+    public static void main(String[] args) {
+
+        Animal genericAnimal = new Animal();
+        System.out.println("Generic Animal sound:");
+        genericAnimal.makeSound();
+        System.out.println();
+
+
+        Cat myCat = new Cat();
+        System.out.println("Cat sound:");
+        myCat.makeSound();
+    }
+}
+
+
+QUESTION 2
+When you forget to put a break statement in a case clause of a switch statement in Java,
+the program will fall through to the subsequent case statements, executing their code as well.
+ This behavior is known as "fall-through."
